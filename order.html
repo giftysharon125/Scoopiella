@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Order</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#fff8fb;
+}
+
+.container{
+padding:50px;
+max-width:500px;
+margin:auto;
+text-align:center;
+}
+
+input,select{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:10px;
+border:1px solid #ccc;
+}
+
+button{
+background:#ff5f93;
+color:white;
+padding:12px;
+border:none;
+width:100%;
+border-radius:20px;
+cursor:pointer;
+}
+
+button:hover{
+background:#ff2d7a;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Place Order 🍦</h1>
+
+<form onsubmit="event.preventDefault();alert('Order Placed!')">
+
+<input placeholder="Name">
+<input placeholder="Email">
+
+<select>
+<option>Cloudberry Bliss</option>
+<option>Matcha Dream</option>
+<option>Berry Galaxy</option>
+<option>Choco Lava</option>
+<option>Mango Sunshine</option>
+<option>Cotton Candy Sky</option>
+</select>
+
+<input type="number" placeholder="Quantity">
+
+<button type="submit">Order Now</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

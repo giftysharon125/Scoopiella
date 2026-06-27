@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Orders</title>
+</head>
+<body>
+
+<h1>Customer Orders</h1>
+
+<div id="orders"></div>
+
+<script>
+
+fetch("http://localhost:5000/api/orders")
+
+.then(res => res.json())
+
+.then(data => {
+
+  let html = "";
+
+  data.forEach(order => {
+
+    html += `
+      <div style="border:1px solid #ddd;padding:15px;margin:10px">
+
+      <h3>${order.customerName}</h3>
+
+      <p>${order.phone}</p>
+
+      <p>${order.flavor}</p>
+
+      <p>Qty: ${order.quantity}</p>
+
+      <p>${order.address}</p>
+
+      </div>
+    `;
+  });
+
+  document.getElementById("orders").innerHTML = html;
+
+});
+
+</script>
+
+</body>
+</html>

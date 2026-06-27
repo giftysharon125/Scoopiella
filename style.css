@@ -1,0 +1,206 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Fredoka',sans-serif;
+}
+
+body{
+background:#fff8fb;
+color:#533636;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:white;
+}
+
+.logo{
+font-size:32px;
+font-weight:700;
+color:#ff5f93;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:35px;
+}
+
+nav a{
+text-decoration:none;
+color:#533636;
+font-weight:500;
+}
+
+.order-btn{
+background:#ff5f93;
+color:white;
+border:none;
+padding:12px 24px;
+border-radius:30px;
+cursor:pointer;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:60px 8%;
+background:#fdeef3;
+border-radius:30px;
+margin:30px;
+}
+
+.hero-text{
+width:50%;
+}
+
+.hero-text h1{
+font-size:60px;
+line-height:1.2;
+}
+
+.hero-text span{
+color:#ff5f93;
+}
+
+.hero-text p{
+margin-top:20px;
+font-size:18px;
+line-height:1.8;
+}
+
+.explore-btn{
+margin-top:25px;
+padding:15px 30px;
+border:none;
+background:#ff5f93;
+color:white;
+border-radius:30px;
+cursor:pointer;
+font-size:16px;
+}
+
+.hero-image img{
+width:500px;
+}
+
+.signature{
+padding:70px 8%;
+}
+
+.signature h2{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:150px;
+height:150px;
+object-fit:cover;
+}
+
+.card h3{
+margin-top:15px;
+}
+
+.card p{
+margin:15px 0;
+line-height:1.6;
+}
+
+.card button{
+padding:10px 22px;
+border:none;
+background:#ff5f93;
+color:white;
+border-radius:25px;
+cursor:pointer;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+padding:40px;
+background:#fdeef3;
+margin:50px;
+border-radius:20px;
+text-align:center;
+}
+
+.features div{
+font-size:30px;
+}
+
+.features h3{
+font-size:18px;
+margin-top:10px;
+}
+
+footer{
+text-align:center;
+padding:50px;
+background:white;
+margin-top:50px;
+}
+
+footer h3{
+font-size:32px;
+color:#ff5f93;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-text{
+width:100%;
+}
+
+.hero-image img{
+width:300px;
+margin-top:30px;
+}
+
+.features{
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+nav{
+flex-direction:column;
+gap:20px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+}

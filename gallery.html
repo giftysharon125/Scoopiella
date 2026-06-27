@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Fredoka', sans-serif;
+}
+
+body{
+background: linear-gradient(135deg,#fff0f6,#fff8fb,#fdfbff);
+color:#533636;
+}
+
+/* soft glow background */
+body::before{
+content:"";
+position:fixed;
+width:400px;
+height:400px;
+background:#ffb6d5;
+filter:blur(120px);
+opacity:0.25;
+top:-120px;
+left:-120px;
+z-index:-1;
+animation: floatGlow 8s infinite alternate;
+}
+
+@keyframes floatGlow{
+from{transform:translate(0,0);}
+to{transform:translate(80px,60px);}
+}
+
+/* ===== NAV (SAME AS INDEX) ===== */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(255,255,255,0.85);
+backdrop-filter: blur(10px);
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:100;
+animation: slideDown 0.8s ease;
+}
+
+@keyframes slideDown{
+from{transform:translateY(-60px);opacity:0;}
+to{transform:translateY(0);opacity:1;}
+}
+
+.logo{
+font-size:32px;
+font-weight:700;
+color:#ff5f93;
+transition:0.3s;
+cursor:pointer;
+}
+
+.logo:hover{
+transform:scale(1.1) rotate(-2deg);
+text-shadow:0 5px 15px rgba(255,95,147,0.3);
+}
+
+
+
+/* NAV LINKS */
+nav a{
+text-decoration:none;
+color:#533636;
+font-weight:500;
+margin:0 15px;
+position:relative;
+transition:0.3s;
+}
+
+nav a::after{
+content:"";
+position:absolute;
+bottom:-5px;
+left:0;
+width:0%;
+height:2px;
+background:#ff5f93;
+transition:0.3s;
+border-radius:10px;
+}
+
+nav a:hover{
+color:#ff5f93;
+}
+
+nav a:hover::after{
+width:100%;
+}
+
+/* ORDER BUTTON */
+.order-btn{
+background:linear-gradient(135deg,#ff5f93,#ff85b5);
+color:white;
+border:none;
+padding:12px 24px;
+border-radius:30px;
+cursor:pointer;
+font-weight:600;
+box-shadow:0 8px 20px rgba(255,95,147,0.3);
+transition:0.3s;
+}
+
+.order-btn:hover{
+transform:translateY(-3px) scale(1.05);
+}
+
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+padding:40px;
+}
+
+img{
+width:100%;
+border-radius:15px;
+transition:.3s;
+}
+
+img:hover{
+transform:scale(1.05);
+}
+
+button{
+margin:20px;
+padding:12px 25px;
+background:#ff5f93;
+color:white;
+border:none;
+border-radius:20px;
+cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">🍦 Scoopiella</div>
+
+<div>
+<a href="index.html">Home</a>
+<a href="flavors.html">Flavors</a>
+<a href="about.html">Story</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+
+<div class="container">
+
+<img src="images/flavour1.png">
+<img src="images/flavour2.png">
+<img src="images/flavour3.png">
+</div>
+<div class="container">
+<img src="images/flavour4.jpeg">
+<img src="images/flavour5.jpeg">
+<img src="images/flavour6.jpeg">
+
+</div>
+
+<center>
+<a href="order.html"><button>Order Now</button></a>
+</center>
+
+</body>
+</html>

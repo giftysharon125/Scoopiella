@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cloudberry Bliss</title>
+
+<style>
+/* Background */
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main Card */
+.flavor-page {
+  background: white;
+  width: 350px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.flavor-page:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+/* Image */
+.flavor-page img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.4s ease;
+}
+
+/* Image hover zoom */
+.flavor-page img:hover {
+  transform: scale(1.05);
+}
+
+/* Title */
+.flavor-page h1 {
+  font-size: 26px;
+  margin: 15px 0 10px;
+  color: #e852c0;
+}
+
+/* Description */
+.flavor-page p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Section heading */
+.flavor-page h2 {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Ingredients list */
+.flavor-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.flavor-page ul li {
+  background: #f3e8ff;
+  margin: 6px 0;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+/* Ingredient hover */
+.flavor-page ul li:hover {
+  background: #e0c3fc;
+  transform: scale(1.03);
+}
+
+/* Price */
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff4d6d;
+  margin-top: 10px;
+}
+
+/* Button */
+button {
+  background: linear-gradient(135deg, #ff4d6d, #ff85a1);
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  font-size: 14px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 77, 109, 0.3);
+}
+
+/* Button hover */
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(255, 77, 109, 0.5);
+}
+
+/* Link reset */
+a {
+  text-decoration: none;
+}
+</style>
+
+</head>
+
+<body>
+
+<section class="flavor-page">
+
+<img src="images/flavour1.png" alt="Cloudberry Bliss">
+
+<h1>Cloudberry Bliss</h1>
+
+<p>
+A luxurious vanilla ice cream infused with rare cloudberries
+and fluffy marshmallow swirls.
+</p>
+
+<h2>Ingredients</h2>
+
+<ul>
+<li>Fresh Milk</li>
+<li>Fresh Cream</li>
+<li>Cloudberries</li>
+<li>Vanilla Extract</li>
+<li>Marshmallows</li>
+</ul>
+
+<h2>Price</h2>
+
+<p class="price">₹199</p>
+
+<a href="order.html">
+<button>Order This Flavor</button>
+</a>
+
+</section>
+
+</body>
+</html>

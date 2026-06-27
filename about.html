@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About | Scoopiella</title>
+
+<style>
+
+/* ====== BASE ====== */
+body{
+margin:0;
+font-family:'Fredoka', sans-serif;
+background: linear-gradient(135deg,#fff0f6,#fdfbff,#f0fff8);
+color:#444;
+overflow-x:hidden;
+}
+
+/* floating soft background glow */
+body::before{
+content:"";
+position:fixed;
+width:400px;
+height:400px;
+background:#ffb6d5;
+filter:blur(120px);
+opacity:0.3;
+top:-100px;
+left:-100px;
+z-index:-1;
+animation: floatGlow 8s infinite alternate;
+}
+
+@keyframes floatGlow{
+from{transform:translate(0,0);}
+to{transform:translate(80px,60px);}
+}
+
+/* ====== NAV ====== */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 30px;
+background:rgba(255,255,255,0.8);
+backdrop-filter: blur(10px);
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+position:sticky;
+top:0;
+z-index:100;
+animation: slideDown 0.8s ease;
+}
+
+@keyframes slideDown{
+from{transform:translateY(-60px);opacity:0;}
+to{transform:translateY(0);opacity:1;}
+}
+
+.logo{
+color:#ff4f9a;
+font-size:28px;
+font-weight:bold;
+transition:0.3s;
+cursor:pointer;
+}
+
+.logo:hover{
+transform:scale(1.1) rotate(-2deg);
+text-shadow:0 5px 15px rgba(255,79,154,0.4);
+}
+
+/* NAV LINKS */
+nav a{
+margin:0 12px;
+text-decoration:none;
+color:#533636;
+position:relative;
+transition:0.3s;
+}
+
+nav a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-5px;
+width:0%;
+height:2px;
+background:#ff4f9a;
+transition:0.3s;
+border-radius:10px;
+}
+
+nav a:hover{
+color:#ff4f9a;
+}
+
+nav a:hover::after{
+width:100%;
+}
+
+/* ===== BUTTON ===== */
+button{
+background: linear-gradient(135deg,#ff4f9a,#ff7db8);
+color:white;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-weight:bold;
+box-shadow:0 8px 15px rgba(255,79,154,0.3);
+transition: all 0.3s ease;
+position:relative;
+overflow:hidden;
+}
+
+/* button shine effect */
+button::before{
+content:"";
+position:absolute;
+top:0;
+left:-100%;
+width:100%;
+height:100%;
+background:rgba(255,255,255,0.3);
+transform:skewX(-20deg);
+transition:0.5s;
+}
+
+button:hover::before{
+left:120%;
+}
+
+button:hover{
+transform:translateY(-3px) scale(1.05);
+box-shadow:0 12px 25px rgba(255,79,154,0.4);
+}
+
+/* ===== CONTENT ===== */
+.container{
+padding:60px 80px;
+line-height:1.8;
+animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+h1{
+color:#ff4f9a;
+font-size:40px;
+margin-bottom:10px;
+}
+
+h2{
+color:#ff6fb0;
+margin-top:30px;
+}
+
+/* paragraphs soft card feel */
+p{
+background:rgba(255,255,255,0.6);
+padding:15px 20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+transition:0.3s;
+}
+
+p:hover{
+transform:scale(1.02);
+background:white;
+}
+
+/* link button spacing */
+a button{
+margin-top:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">🍦 Scoopiella</div>
+
+<div>
+<a href="index.html">Home</a>
+<a href="flavor.html">Flavors</a>
+<a href="about.html">About</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+</div>
+
+<a href="gallery.html"><button>Gallery</button></a>
+</nav>
+
+<div class="container">
+
+<h1>Our Story</h1>
+
+<p>
+Scoopiella is a magical ice cream brand created to bring joy
+through handcrafted flavors made with love and natural ingredients.
+</p>
+
+<h2>Mission</h2>
+<p>To deliver happiness in every scoop.</p>
+
+<h2>Vision</h2>
+<p>To become a global creative ice cream experience brand.</p>
+
+<a href="flavor.html"><button>Explore Flavors</button></a>
+
+</div>
+
+</body>
+</html>
