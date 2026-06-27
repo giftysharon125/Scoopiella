@@ -38,13 +38,6 @@ Scoopiella is a magical ice cream brand website featuring:
 🌱 Eco-friendly branding  
 📱 Mobile-ready layout  
 
----
-
-## 🚀 Live Project
-
-👉 https://giftysharon125.github.io/scoopiella/
-
----
 
 ## 🛠 Tech Stack
 
