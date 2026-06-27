@@ -1,11 +1,3 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/Scoopiella-Ice%20Cream%20Website-pink?style=for-the-badge&logo=icecream" />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Live-success?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Made%20With-HTML%20%7C%20CSS%20%7C%20JS-blue?style=flat-square"/>
-</p>
 
 <h1 align="center">🍦 Scoopiella</h1>
 
