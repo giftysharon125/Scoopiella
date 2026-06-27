@@ -41,7 +41,7 @@ Scoopiella is a magical ice cream brand website featuring:
 
 ## 🚀 Live Project
 
-👉 https://your-username.github.io/scoopiella/
+👉 https://giftysharon125.github.io/scoopiella/
 
 ---
 
