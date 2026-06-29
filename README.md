@@ -22,13 +22,7 @@ Scoopiella is a magical ice cream brand website featuring:
 
 ---
 
-## 🍧 Preview
 
-<p align="center">
-  <img src="images/hero-icecream.png" width="400"/>
-</p>
-
----
 
 ## 🧁 Features
 
